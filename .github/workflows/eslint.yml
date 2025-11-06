@@ -5,10 +5,8 @@ run-name: Check eslint
 on:
   push:
     branches:
-      - "**"
-  pull_request:
-    branches:
-      - "**"
+      - main
+  workflow_dispatch:
 
 jobs:
   eslint:
@@ -35,3 +33,4 @@ jobs:
       - name: Lint
         working-directory: tests
         run: yarn lint
+
