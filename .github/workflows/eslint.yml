@@ -1,6 +1,4 @@
-name: eslint
-
-run-name: Check eslint
+name: Checking for path error
 
 on:
   push:
