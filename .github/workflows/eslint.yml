@@ -23,6 +23,7 @@ jobs:
         with:
           node-version-file: tests/package.json
           cache: yarn
+          cache-dependency-path: tests/yarn.lock
 
       - name: Install Dependencies
         working-directory: tests
